@@ -1,0 +1,5 @@
+IP: 158.160.75.230;
+name_taski: https://mishuler.sytes.net;
+name_kittygram: https://ypkittycatbm.myftp.org;
+login: admin;
+password: admin;
