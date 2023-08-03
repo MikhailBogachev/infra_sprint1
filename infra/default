@@ -1,19 +1,19 @@
 server {
-	server_name 158.160.75.230 mishuler.sytes.net;
+    server_name 158.160.75.230 mishuler.sytes.net;
 
-	location /api/ {
-		proxy_pass http://127.0.0.1:8000;
-	}
+    location /api/ {
+	proxy_pass http://127.0.0.1:8000;
+    }
 
-	location /admin/ {
-		proxy_pass http://127.0.0.1:8000;
-	}
+    location /admin/ {
+	proxy_pass http://127.0.0.1:8000;
+    }
 
-	location / {
-		root /var/www/taski;
-		index index.html index.htm;
-		try_files $uri /index.html;
-	}
+    location / {
+	root /var/www/taski;
+	index index.html index.htm;
+	try_files $uri /index.html;
+    }
 
 
     listen 443 ssl; # managed by Certbot
@@ -61,8 +61,8 @@ server {
 
 
 
-	listen 80;
-	server_name 158.160.75.230 mishuler.sytes.net;
+    listen 80;
+    server_name 158.160.75.230 mishuler.sytes.net;
     return 404; # managed by Certbot
 
 
