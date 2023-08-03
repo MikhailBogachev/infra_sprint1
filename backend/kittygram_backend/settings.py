@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', '8t6c^uvn^r@wmocz7^0rwia=lszy4p4sc2of6xw62tbl7und5_')
 
-DEBUG = 'False'
+DEBUG = os.getenv('DEBUG', False) == 'True'
 
 ALLOWED_HOSTS = ['158.160.75.230', 'ypkittycatbm.myftp.org', '127.0.0.1', 'localhost']
 
